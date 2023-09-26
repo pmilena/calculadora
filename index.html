@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Imagens/calc.ico" type="image/x-icon">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <img src="Imagens/[CITYPNG.COM]JS Javascript Round Logo Icon PNG - 7000x7000.png" alt="">
+        </div>
+        
+        <div class="header_title">
+            <h1>JS Math: Operações Básicas</h1>
+        </div>
+    </header>
+
+    <section class="content">
+
+        <div class="calc">
+            <img src="Imagens/calc2.png" alt="calculadora" width="280vw" height="250vh">
+        </div>
+
+        <div class="text_content">
+            <h1>Vamos Calcular</h1>
+
+            <div>
+                <input type="number" name="txtn1" id="txtn1" placeholder="Digite um número">
+            </div>
+            
+            <div>
+                <input type="number" name="txtn2" id="txtn2" placeholder="Digite outro número">
+            </div> 
+
+            <div class="operators">
+                <input type="button" value="+" onclick="somar()">
+                <input type="button" value="-" onclick="subtrair()">
+                <input type="button" value="x" onclick="multiplicar()">
+                <input type="button" value="÷" onclick="dividir()"> 
+            </div>
+
+            <div class="clean" >
+                <input type="button" value="Limpar" onclick="limpar()">
+            </div>
+
+            <div id="res">Resultado</div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        Copyright © All rights reserved | This template is made by Milena Pereira
+    </footer>
+   
+    
+</body>
+</html>

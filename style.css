@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dosis&family=Inter&family=Poppins:wght@300&family=Radio+Canada&family=Roboto:ital,wght@0,300;1,300&family=Tektur:wght@700&family=Viaoda+Libre&display=swap');
+
+:root {
+    --primary-bg-color: rgb(234, 234, 242);
+    --header-bg-color: rgb(235, 202, 18);
+    --button-bg-color: #6d6c6c;
+    --button-hover-color: rgba(0, 0, 0, 0.7);
+    --text-color: #6d6c6c;
+}
+
+body {
+    margin: 0;
+    font-family: 'Tektur', sans-serif;
+    background-color: var(--primary-bg-color);
+}
+
+.header {
+    background-color: var(--header-bg-color);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header img {
+    height: 2em;
+}
+
+.header_title {
+    font-size: .5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.calc img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.text_content {
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    max-width: 20em;
+    height: 15em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+   
+}
+
+.text_content h1 {
+    font-size: 1.5rem;
+}
+
+.operators {
+    display: flex;
+    gap: 0.5em;
+}
+
+input[type="number"],
+input[type="button"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+input[type="number"] {
+    padding: 0.5em;
+    text-align: center;
+}
+
+input[type="button"] {
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+.clean input[type="button"] {
+    background-color: transparent;
+    border: 2px solid var(--button-bg-color);
+    color: var(--button-bg-color);
+    font-weight: 500;
+}
+
+#res {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.footer {
+    background-color: rgb(147, 149, 150);
+    font-size: .8rem;
+    text-align: center;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        height: 75vh;
+        padding: 2em;
+    }
+
+    .calc img {
+        width: 50em;
+        height: auto;
+    }
+
+    .text_content {
+        width: 50%;
+    }
+}
